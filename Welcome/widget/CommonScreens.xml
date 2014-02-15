@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/widget-screen.xsd">
+
+    <screen name="main-decorator">
+        <section>
+            <actions>
+                <property-map resource="WelcomeUiLabels" map-name="uiLabelMap" global="true"/>
+                <property-map resource="CommonUiLabels" map-name="uiLabelMap" global="true"/>
+
+                <set field="layoutSettings.companyName" from-field="uiLabelMap.WelcomeCompanyName" global="true"/>
+                <set field="layoutSettings.companySubtitle" from-field="uiLabelMap.WelcomeCompanySubtitle" global="true"/>
+
+                <set field="activeApp" value="Welcome" global="true"/>
+                <set field="applicationMenuName" value="MainAppBar" global="true"/>
+                <set field="applicationMenuLocation" value="component://Welcome/widget/WelcomeMenus.xml" global="true"/>
+                <set field="applicationTitle" value="${uiLabelMap.WelcomeApplication}" global="true"/>
+          <!--Put this new stylesheet in theme folder --> <set field="layoutSettings.styleSheets[+0]" value="/tomahawk/css/welcomeappstyle.css" default-value="/tecnoerp/css/welcomeappstyle.css" global="true"/> 
+          <!--Put this new stylesheet in theme folder AND edit theme's /includes/appbartop.flt to add <icon> tag --><set field="layoutSettings.styleSheets[+0]" value="/tomahawk/css/font-awesome/css/font-awesome.min.css" default-value="/tecnoerp/css/font-awesome/css/font-awesome.min.css" global="true"/> 
+
+            </actions>
+            <widgets>
+                <include-screen name="ApplicationDecorator" location="component://commonext/widget/CommonScreens.xml"/>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="WelcomeCommonDecorator">
+        <section>
+            <actions>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <section>
+                            <widgets>
+                                <decorator-section-include name="body"/>
+                                <label style="welcomemsg" text="You have access to the following applications:"/>
+                            </widgets>
+                        </section>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+</screens>

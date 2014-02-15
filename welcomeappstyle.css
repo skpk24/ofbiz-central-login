@@ -1,0 +1,36 @@
+/* Will update soon, this is not yet complete */ 
+
+/*=================== For the custom welcome page app - changes the menu item to Icons  =================================*/
+#control-area {display:none;}
+.main {display:inline !important;}
+#app-navigation {display:none;}
+#content-main-section {height:500px;}
+.primary {background:none !important; border:none !important;} 
+.secondary {background:none !important; border:none !important;}
+#main-navigation {background:none !important;}
+.main {display:inline;}
+#main-navigation ul li ul, #app-navigation ul li ul {width:100% !important;margin-top:30px; opacity: 1 !important;}
+#main-navigation ul li ul li a, #app-navigation ul li ul li a {float:left;text-align:center;min-width:50px;padding:15px !important;margin:3px;background-color:#FFD800;font-weight:bold !important;border:1px solid #666;color:#222 !important;}
+#main-navigation ul li ul li a:hover, #app-navigation ul li ul li a:hover {background-color:#FFEE37 !important;color:#222;}
+#main-navigation ul li ul li ul.secondary {top:250px !important;left:0px !important;}
+.welcomemsg {font-size:11px;}
+[title="loginpage"] {display:none !important;}
+.primary {margin-left:15px;}
+#main-navigation h2, #app-navigation h2 {display:none;}
+
+/*=================== Font Awesome Icons  =================================*/
+.Participante:before, .Compras:before, .Ventas:before, .Contabilidad:before, .Catálogo:before, .Almacén:before, .Pedido:before { 
+	font-family: FontAwesome;
+	font-style:normal;
+	font-size:2em;
+	padding-right:10px;
+	vertical-align: middle;
+}
+
+.Compras:before {content: "\f09d";}
+.Participante:before {content:"\f0c0";}
+.Ventas:before {content:"\f0d6";}
+.Contabilidad:before {content:"\f155";}
+.Catálogo:before {content:"\f03a";}
+.Almacén:before{content:"\f0d1";}
+.Pedido:before{content:"\f017";}
