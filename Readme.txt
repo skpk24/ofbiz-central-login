@@ -2,7 +2,7 @@ Purpose:
 This acts as a "welcome" page for Ofbiz where all users can log on, once logged-in they will see only the apps they can access (as yellow buttons with Icons).
  
 How it works: 
-The "Welcome" application is a blank app that acts as a common login page for all users with accounts. Once logged in, the CSS files turn the existing Ofbiz applications menu into Yellow buttons with Icons. That's it! Simple and quick :)     
+The "Welcome" application is a blank app that acts as a common login page for all users with accounts. Once logged in, the app calls two CSS files that turn the existing Ofbiz applications menu into Yellow buttons with Icons. That's it! Simple and quick :)     
 
 Note:
 This was made for the default Ofbiz visual theme "Tomahawk". Browsers tested: IE9, Firefox, Chrome. 
