@@ -17,14 +17,14 @@ Instructions:
 =======================================================================================================
 If you are curious as to what files I added/changed on Ofbiz, please see below: 
 =======================================================================================================
-Files Modified:
-ofbiz/hot-deploy/welcome/widget/CommonScreens.xml - added stylesheet calls, see comments in line 18/19
-ofbiz/hot-deploy/welcome/ofbiz-component.xml - Set root mount point and base-permission to "OFBTOOLS" on lines 37/38
-ofbiz/themes/tomahawk/includes/appbarOpen.FTL - added <icon> tag to menu items
+Folders Added:
+Welcome app - I used "./ant create-component" to make the welcome app in the hot-deploy folder. 
+ofbiz/themes/webapp/tomahawk/css/font-awesome - Downloaded from font awesome website. 
 
 Files Added: 
 ofbiz/themes/webapp/tomahawk/css/welcomeappstyle.css
 
-Folders Added:
-Welcome app - I used "./ant create-component" to make the welcome app in the hot-deploy folder. 
-ofbiz/themes/webapp/tomahawk/css/font-awesome - Downloaded from font awesome website. 
+Files Modified:
+ofbiz/hot-deploy/welcome/widget/CommonScreens.xml - added stylesheet calls, see comments in line 18/19
+ofbiz/hot-deploy/welcome/ofbiz-component.xml - Set root mount point and base-permission to "OFBTOOLS" on lines 37/38
+ofbiz/themes/tomahawk/includes/appbarOpen.FTL - added <icon> tag to menu items
