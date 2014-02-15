@@ -1,5 +1,5 @@
 Purpose: 
-This acts as a "welcome" page for Ofbiz which all users can log onto, once logged-in they will see only the apps they can access (as yellow buttons with Icons).
+This acts as a "welcome" page for Ofbiz where all users can log on, once logged-in they will see only the apps they can access (as yellow buttons with Icons).
  
 How it works: 
 The "Welcome" application is a blank app that acts as a common login page for all users with accounts. Once logged in, the CSS files turn the existing Ofbiz applications menu into Yellow buttons with Icons. That's it! Simple and quick :)     
