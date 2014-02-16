@@ -1,6 +1,4 @@
-/* Will update soon, this is not yet complete */ 
-
-/*=================== For the custom welcome page app - changes the menu item to Icons  =================================*/
+/*=================== Welcome page app - Let's hide some things and change the app menu to Icons  =================================*/
 #control-area {display:none;}
 .main {display:inline !important;}
 #app-navigation {display:none;}
@@ -10,23 +8,50 @@
 #main-navigation {background:none !important;}
 .main {display:inline;}
 #main-navigation ul li ul, #app-navigation ul li ul {width:100% !important;margin-top:30px; opacity: 1 !important;}
-#main-navigation ul li ul li a, #app-navigation ul li ul li a {float:left;text-align:center;min-width:50px;padding:15px !important;margin:3px;background-color:#FFD800;font-weight:bold !important;border:1px solid #666;color:#222 !important;}
+#main-navigation ul li ul li a, #app-navigation ul li ul li a {float:left;text-align:center;min-width:50px;padding:15px !important;margin:3px;background-color:#FFD800;font-weight:bold !important;border-radius:4px;border:1px solid #EBC700;color:#222 !important;}
 #main-navigation ul li ul li a:hover, #app-navigation ul li ul li a:hover {background-color:#FFEE37 !important;color:#222;}
 #main-navigation ul li ul li ul.secondary {top:250px !important;left:0px !important;}
 .welcomemsg {font-size:11px;}
-[title="loginpage"] {display:none !important;}
 .primary {margin-left:15px;}
 #main-navigation h2, #app-navigation h2 {display:none;}
+[title="Welcome"] {display:none !important;}
 
-/*=================== Font Awesome Icons  =================================*/
-.Participante:before, .Compras:before, .Ventas:before, .Contabilidad:before, .Catálogo:before, .Almacén:before, .Pedido:before { 
+/*=================== Font Awesome Icons English =================================*/
+.AR:before, .AP:before, .Asset.Maint:before, .Accounting:before, .Catalog:before, .My.Portal:before, .Order:before, .Content:before, .Facility:before, .HR:before, .Marketing:before, .Party:before, .Project:before, .SFA:before, .Work.Effort:before, .Scrum:before, .Manufacturing:before { 
 	font-family: FontAwesome;
 	font-style:normal;
 	font-size:2em;
 	padding-right:10px;
 	vertical-align: middle;
 }
+/* You can change the icons below */
+.AR:before {content:"\f0d6";}
+.AP:before {content: "\f09d";}
+.Accounting:before {content:"\f155";}
+.Asset.Maint:before {content:"\f0f7";}
+.Catalog:before {content:"\f03a";}
+.My.Portal:before{content:"\f0d1";}
+.Order:before{content:"\f017";}
+.Content:before{content:"\f009";}
+.Facility:before{content:"\f0d1";}
+.HR:before{content:"\f009";}
+.Marketing:before{content:"\f009";}
+.Party:before{content:"\f0c0";}
+.Project:before{content:"\f009";}
+.SFA:before{content:"\f009";}
+.Scrum:before{content:"\f009";}
+.Work.Effort:before{content:"\f009";}
+.Manufacturing:before{content:"\f009";}
 
+/*=================== Font Awesome Icons Spanish =================================*/
+.Participante:before, .Compras:before, .Ventas:before, .Contabilidad:before, .Catálogo:before, .Almacén:before, .Pedido:before, .Manten\..Activos:before, .Contenido:before, .Mi.portal:before, .Proyecto:before, .Distribución:before, .Fabricación:before, HH.RR:before  { 
+	font-family: FontAwesome;
+	font-style:normal;
+	font-size:2em;
+	padding-right:10px;
+	vertical-align: middle;
+}
+/* You can change the icons below */
 .Compras:before {content: "\f09d";}
 .Participante:before {content:"\f0c0";}
 .Ventas:before {content:"\f0d6";}
@@ -34,3 +59,10 @@
 .Catálogo:before {content:"\f03a";}
 .Almacén:before{content:"\f0d1";}
 .Pedido:before{content:"\f017";}
+.Manten\..Activos:before {content:"\f0f7";}
+.Contenido:before {content:"\f009";}
+.Fabricación:before {content:"\f009";}
+.Mi.portal:before{content:"\f009";}
+.Proyecto:before {content:"\f009";}
+.Distribución:before {content:"\f009";}
+HH.RR:before {content:"\f009";}

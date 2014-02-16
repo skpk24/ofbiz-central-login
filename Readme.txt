@@ -5,7 +5,7 @@ How it works:
 This application is mounted on the root https://localhost:8443, once logged in the app calls two CSS files that turn the existing Ofbiz applications menu into buttons with Icons. That's it! Simple and quick :)     
 
 Note:
-This was made for the default Ofbiz visual theme "Tomahawk" using the EN english language setting or ES spanish setting. (For other languages, you will have to update the css file). Browsers tested: IE9, Firefox, Chrome. 
+This was made for the default Ofbiz visual theme "Tomahawk" using the EN english language setting or ES Espanol setting. (For other languages, you will have to update the css file). Browsers tested: IE9, Firefox, Chrome. 
 
 Instructions: 
 1. Add the included "Welcome" folder to your "Ofbiz/hot-deploy" folder
@@ -19,7 +19,6 @@ Instructions:
 5. Login with any user account, you will only see apps that account has access to (As Yellow buttons with Icons - See included screenshot)  
 
 6. DONE !! Enjoy :) 
-
 
 How to change icons: 
 Edit the css file. For a list of available icons visit the font awesome website at http://fortawesome.github.io/Font-Awesome/icons/
